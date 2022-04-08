@@ -27,7 +27,7 @@ appDrawer() => Drawer(
           ListTile(
             leading: const Icon(Icons.map),
             title: const Text('Map'),
-            onTap: () => {Get.off(const MapPage())},
+            onTap: () => {Get.off(MapPage())},
           ),
           ListTile(
             leading: const Icon(Icons.location_on),

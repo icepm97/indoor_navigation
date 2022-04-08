@@ -1,44 +1,66 @@
+import 'dart:convert';
+import 'dart:developer';
+import 'dart:html';
+
 import 'package:flutter/material.dart';
-import 'package:indoor_navigation/views/widgets/app_drawer.dart';
+import 'package:get/get.dart';
+import 'package:mapbox_gl/mapbox_gl.dart';
 
 class MapPage extends StatelessWidget {
-  const MapPage({Key? key}) : super(key: key);
+  MapPage({Key? key}) : super(key: key);
+
+  MapboxMapController? mapController;
+
+  final String token =
+      'pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA';
+  final String style = 'mapbox://styles/mapbox/light-v10';
+
+  void onFeatureTap(dynamic featureId, Point<double> point, LatLng latLng) {
+    print(featureId);
+    print(point);
+    // Get.snackbar("Feature Tapped", featureId);
+  }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Indoor Navigation'),
-      ),
-      drawer: appDrawer(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Scan a QR Code to find your location."),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Or"),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: ElevatedButton(
-                onPressed: null,
-                child: Text("Browse Map"),
-              ),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: ElevatedButton(
-                onPressed: null,
-                child: Text("View POIs"),
-              ),
-            ),
-          ],
+      // body: MapboxMap(
+      //   accessToken: token,
+      //   styleString: style,
+      //   initialCameraPosition: const CameraPosition(
+      //     zoom: 18.0,
+      //     target: LatLng(49.867630660511715, 10.89075028896332),
+      //     bearing: 0,
+      //     tilt: 0,
+      //   ),
+      // ),
+      body: MapboxMap(
+        accessToken: token,
+        styleString: style,
+        initialCameraPosition: const CameraPosition(
+          zoom: 18.0,
+          target: LatLng(6.796899, 79.900451),
+          bearing: 0,
+          tilt: 0,
         ),
+        onMapCreated: (controller) {
+          mapController = controller;
+          controller.onFeatureTapped.add(onFeatureTap);
+        },
+        onStyleLoadedCallback: () {
+          mapController?.addSource(
+              'floorplan',
+              const GeojsonSourceProperties(
+                  data: "assets/sumanadasa-building.geojson"));
+
+          mapController?.addLayer(
+              "floorplan",
+              "room-extrusion",
+              const FillLayerProperties(
+                fillOpacity: 0.5,
+                // fillColor: [Expressions.get, "color"],
+              ));
+        },
       ),
     );
   }
