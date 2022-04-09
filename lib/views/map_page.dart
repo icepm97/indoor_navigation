@@ -1,6 +1,6 @@
-import 'dart:convert';
-import 'dart:developer';
-import 'dart:html';
+
+
+import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -51,14 +51,14 @@ class MapPage extends StatelessWidget {
           mapController?.addSource(
               'floorplan',
               const GeojsonSourceProperties(
-                  data: "assets/sumanadasa-building.geojson"));
+                  data: "https://api.mapbox.com/datasets/v1/cloud-kitchen-sl/cl1m3m344240v28lbgp08gvwk/features?access_token=pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA"));
 
           mapController?.addLayer(
               "floorplan",
               "room-extrusion",
               const FillLayerProperties(
                 fillOpacity: 0.5,
-                // fillColor: [Expressions.get, "color"],
+                fillColor: "violet",
               ));
         },
       ),
