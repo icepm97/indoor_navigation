@@ -1,9 +1,6 @@
-
-
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:mapbox_gl/mapbox_gl.dart';
 
 class MapPage extends StatelessWidget {
@@ -51,7 +48,8 @@ class MapPage extends StatelessWidget {
           mapController?.addSource(
               'floorplan',
               const GeojsonSourceProperties(
-                  data: "https://api.mapbox.com/datasets/v1/cloud-kitchen-sl/cl1m3m344240v28lbgp08gvwk/features?access_token=pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA"));
+                  data:
+                      "https://api.mapbox.com/datasets/v1/cloud-kitchen-sl/cl1m3m344240v28lbgp08gvwk/features?access_token=pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA"));
 
           mapController?.addLayer(
               "floorplan",
@@ -60,6 +58,11 @@ class MapPage extends StatelessWidget {
                 fillOpacity: 0.5,
                 fillColor: "violet",
               ));
+          mapController!.addSymbol(const SymbolOptions(
+            textAnchor: "top",
+            textField: "Hello",
+            geometry: LatLng(6.796899, 79.900451),
+          ));
         },
       ),
     );
