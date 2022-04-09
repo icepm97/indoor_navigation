@@ -36,7 +36,7 @@ class MapPage extends StatelessWidget {
         styleString: style,
         initialCameraPosition: const CameraPosition(
           zoom: 18.0,
-          target: LatLng(6.796899, 79.900451),
+          target: LatLng(6.904996, 79.868385),
           bearing: 0,
           tilt: 0,
         ),
@@ -45,11 +45,8 @@ class MapPage extends StatelessWidget {
           controller.onFeatureTapped.add(onFeatureTap);
         },
         onStyleLoadedCallback: () {
-          mapController?.addSource(
-              'floorplan',
-              const GeojsonSourceProperties(
-                  data:
-                      "https://api.mapbox.com/datasets/v1/cloud-kitchen-sl/cl1m3m344240v28lbgp08gvwk/features?access_token=pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA"));
+          mapController?.addSource('floorplan',
+              const GeojsonSourceProperties(data: "assets/map.geojson"));
 
           mapController?.addLayer(
               "floorplan",

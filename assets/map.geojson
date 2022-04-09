@@ -1,0 +1,1891 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868164,
+              6.905198
+            ],
+            [
+              79.8682,
+              6.905188
+            ]
+          ]
+        },
+        "id": "03af80c8fc647b658ca85b7df9c0b877"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 4"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868402,
+            6.905116
+          ]
+        },
+        "id": "0518e5f4d73f5370d3c183dba84053c5"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 1
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868167,
+            6.905272
+          ]
+        },
+        "id": "15b3492e827f54c9174c711d3bd5830d"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 4"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868349,
+                6.905133
+              ],
+              [
+                79.868366,
+                6.905088
+              ],
+              [
+                79.868404,
+                6.905063
+              ],
+              [
+                79.868464,
+                6.905099
+              ],
+              [
+                79.868411,
+                6.905175
+              ],
+              [
+                79.868349,
+                6.905133
+              ]
+            ]
+          ]
+        },
+        "id": "18aff38a58d60abb4c8844cc1780dbbb"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 10"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.867993,
+                6.905085
+              ],
+              [
+                79.868039,
+                6.905019
+              ],
+              [
+                79.868149,
+                6.905083
+              ],
+              [
+                79.868101,
+                6.905147
+              ],
+              [
+                79.868052,
+                6.905156
+              ],
+              [
+                79.868006,
+                6.90513
+              ],
+              [
+                79.867993,
+                6.905085
+              ]
+            ]
+          ]
+        },
+        "id": "1e4e4abd4c9c7a0a195657847e669f65"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868041,
+              6.90524
+            ],
+            [
+              79.868033,
+              6.905193
+            ]
+          ]
+        },
+        "id": "258c0f3ed114a176db53c552bd10104b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 3"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868343,
+            6.905192
+          ]
+        },
+        "id": "29b61131b48531eecec30bad86c431fb"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 9"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868207,
+                6.905014
+              ],
+              [
+                79.868262,
+                6.904938
+              ],
+              [
+                79.868337,
+                6.904989
+              ],
+              [
+                79.86834,
+                6.905019
+              ],
+              [
+                79.868312,
+                6.905053
+              ],
+              [
+                79.868271,
+                6.905058
+              ],
+              [
+                79.868207,
+                6.905014
+              ]
+            ]
+          ]
+        },
+        "id": "3227fcb2a4e210f094b4e5f7b4c6d381"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 6"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868037,
+                6.905194
+              ],
+              [
+                79.868054,
+                6.90516
+              ],
+              [
+                79.8681,
+                6.905155
+              ],
+              [
+                79.868161,
+                6.905198
+              ],
+              [
+                79.868163,
+                6.905234
+              ],
+              [
+                79.868131,
+                6.905263
+              ],
+              [
+                79.868092,
+                6.90527
+              ],
+              [
+                79.868045,
+                6.90524
+              ],
+              [
+                79.868037,
+                6.905194
+              ]
+            ]
+          ]
+        },
+        "id": "3614306aecd597745e85e01af5f78039"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 7
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868016,
+            6.905164
+          ]
+        },
+        "id": "3d87e2e3aeb26fe127dfd35397c49f1b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868102,
+              6.905151
+            ],
+            [
+              79.868152,
+              6.905082
+            ],
+            [
+              79.868222,
+              6.90513
+            ],
+            [
+              79.868222,
+              6.905157
+            ]
+          ]
+        },
+        "id": "4e59f4a918e310f42b3c951961caae75"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 3
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868287,
+            6.905139
+          ]
+        },
+        "id": "57da2db315a0fba9b7a75c39b2b5c627"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868404,
+              6.905061
+            ],
+            [
+              79.868406,
+              6.905028
+            ]
+          ]
+        },
+        "id": "6d028dc21c3ec3958a8624f642e8c886"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868288,
+            6.90526
+          ]
+        },
+        "id": "6ff4c4d6266259fd442f0ee67c4dc21e"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868273,
+              6.905061
+            ],
+            [
+              79.868306,
+              6.905056
+            ]
+          ]
+        },
+        "id": "72d6387bfc6fcbf43a8afc919517ca45"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868273,
+              6.905061
+            ],
+            [
+              79.868283,
+              6.905087
+            ]
+          ]
+        },
+        "id": "77935c8b5010d5df0e74ed67df9c9d5b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 10"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.86806,
+            6.905096
+          ]
+        },
+        "id": "7c19858220e118daec67108e5b73509b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 6"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868097,
+            6.905213
+          ]
+        },
+        "id": "8620ba0f6d6958641e4583ad8d39a33b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868092,
+              6.905273
+            ],
+            [
+              79.868124,
+              6.905267
+            ]
+          ]
+        },
+        "id": "8a694ad7d2358868bb1fab1a86a76b7b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868224,
+              6.905256
+            ],
+            [
+              79.868244,
+              6.905232
+            ]
+          ]
+        },
+        "id": "8bdf80f28f53e707900ea71067317e8a"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 8"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868156,
+                6.905081
+              ],
+              [
+                79.868202,
+                6.905017
+              ],
+              [
+                79.86827,
+                6.905062
+              ],
+              [
+                79.868281,
+                6.90509
+              ],
+              [
+                79.868258,
+                6.90512
+              ],
+              [
+                79.868223,
+                6.905126
+              ],
+              [
+                79.868156,
+                6.905081
+              ]
+            ]
+          ]
+        },
+        "id": "8d36aa3c06c4c3ce7cad250a8c818349"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 11"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868145,
+            6.904979
+          ]
+        },
+        "id": "9d69bc14c105d4906cc9f0afad6fabe6"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868203,
+              6.905013
+            ],
+            [
+              79.868262,
+              6.904934
+            ],
+            [
+              79.86834,
+              6.904988
+            ],
+            [
+              79.868342,
+              6.905015
+            ]
+          ]
+        },
+        "id": "9f43be4b10f35d4186aa4d250c657309"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 11"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868043,
+                6.905014
+              ],
+              [
+                79.868146,
+                6.904871
+              ],
+              [
+                79.868257,
+                6.904934
+              ],
+              [
+                79.868151,
+                6.905078
+              ],
+              [
+                79.868043,
+                6.905014
+              ]
+            ]
+          ]
+        },
+        "id": "a599b5a0c27bfc5798a743601e5b024e"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 9"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868276,
+            6.905004
+          ]
+        },
+        "id": "ace9947d0fc8cbfafeb8fac27fee5b0a"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 1"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868178,
+                6.905318
+              ],
+              [
+                79.868191,
+                6.905294
+              ],
+              [
+                79.868224,
+                6.905257
+              ],
+              [
+                79.868301,
+                6.905317
+              ],
+              [
+                79.868249,
+                6.905373
+              ],
+              [
+                79.868178,
+                6.905318
+              ]
+            ]
+          ]
+        },
+        "id": "b1cf347c2a4a3a2b8791a8443bec61ca"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 6
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868255,
+            6.904913
+          ]
+        },
+        "id": "b84d27aa830b83d2f9c0884108388054"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 8"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868219,
+            6.905077
+          ]
+        },
+        "id": "b8f61f1ca67e1f5ca09e619b2ae5011f"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868152,
+              6.905082
+            ],
+            [
+              79.868038,
+              6.905016
+            ],
+            [
+              79.86799,
+              6.905084
+            ],
+            [
+              79.868003,
+              6.90513
+            ]
+          ]
+        },
+        "id": "bfdb53ae289003ad1a4b84b378c67d58"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 2
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.86823,
+            6.905202
+          ]
+        },
+        "id": "d060ed1c687d3e1fe923ae0c4b910aac"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 5
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868385,
+            6.904996
+          ]
+        },
+        "id": "d34ea35dfdd51f2c28e1da77fb5ed464"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 7"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868165,
+            6.905145
+          ]
+        },
+        "id": "d6da0721b4562b1f8659c4c1a63dda72"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 3"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868281,
+                6.905203
+              ],
+              [
+                79.868307,
+                6.905156
+              ],
+              [
+                79.868346,
+                6.905136
+              ],
+              [
+                79.868409,
+                6.905177
+              ],
+              [
+                79.868353,
+                6.905256
+              ],
+              [
+                79.868281,
+                6.905203
+              ]
+            ]
+          ]
+        },
+        "id": "e92f19300e8d721713878730d5ffab35"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868235,
+            6.905317
+          ]
+        },
+        "id": "ebb7a8c9bda7f85829a61e2abe4d7db0"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 5"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868407,
+                6.905029
+              ],
+              [
+                79.868417,
+                6.905013
+              ],
+              [
+                79.868452,
+                6.904997
+              ],
+              [
+                79.868511,
+                6.90503
+              ],
+              [
+                79.868465,
+                6.905097
+              ],
+              [
+                79.868406,
+                6.90506
+              ],
+              [
+                79.868407,
+                6.905029
+              ]
+            ]
+          ]
+        },
+        "id": "ed348d3812e3037c327d77184b439cda"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "path",
+          "name": 4
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868342,
+            6.905067
+          ]
+        },
+        "id": "f087d200907798a7da4b391a5ebc6c58"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 7"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868106,
+                6.905151
+              ],
+              [
+                79.868152,
+                6.905084
+              ],
+              [
+                79.868219,
+                6.905131
+              ],
+              [
+                79.86822,
+                6.905162
+              ],
+              [
+                79.868204,
+                6.905184
+              ],
+              [
+                79.868162,
+                6.905194
+              ],
+              [
+                79.868106,
+                6.905151
+              ]
+            ]
+          ]
+        },
+        "id": "f4d00942c16ace85c28908cbc74d0166"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "type": "stall",
+          "name": "Stall 5"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.868454,
+            6.905044
+          ]
+        },
+        "id": "fe03e8ffd69445aa7aa1ebced91e7212"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868235,
+              6.905317
+            ],
+            [
+              79.868167,
+              6.905272
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868167,
+              6.905272
+            ],
+            [
+              79.86823,
+              6.905202
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.86823,
+              6.905202
+            ],
+            [
+              79.868288,
+              6.90526
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.86823,
+              6.905202
+            ],
+            [
+              79.868287,
+              6.905139
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868287,
+              6.905139
+            ],
+            [
+              79.868343,
+              6.905192
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868287,
+              6.905139
+            ],
+            [
+              79.868342,
+              6.905067
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868342,
+              6.905067
+            ],
+            [
+              79.868402,
+              6.905116
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868342,
+              6.905067
+            ],
+            [
+              79.868385,
+              6.904996
+            ],
+            [
+              79.868385,
+              6.904996
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868385,
+              6.904996
+            ],
+            [
+              79.868454,
+              6.905044
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868167,
+              6.905272
+            ],
+            [
+              79.868097,
+              6.905213
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868165,
+              6.905145
+            ],
+            [
+              79.86823,
+              6.905202
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868219,
+              6.905077
+            ],
+            [
+              79.868287,
+              6.905139
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868276,
+              6.905004
+            ],
+            [
+              79.868342,
+              6.905067
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868016,
+              6.905164
+            ],
+            [
+              79.868097,
+              6.905213
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868016,
+              6.905164
+            ],
+            [
+              79.86806,
+              6.905096
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868145,
+              6.904979
+            ],
+            [
+              79.868219,
+              6.905077
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868255,
+              6.904913
+            ],
+            [
+              79.868145,
+              6.904979
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868255,
+              6.904913
+            ],
+            [
+              79.868385,
+              6.904996
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "entrance",
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Entrance 1"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.86841008067131,
+            6.90496353393035
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "entrance",
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Entrance 3"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.86813515424728,
+            6.90531834587003
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "entrance",
+          "marker-color": "#7e7e7e",
+          "marker-size": "medium",
+          "marker-symbol": "",
+          "name": "Entrance 2"
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            79.86794471740723,
+            6.90517988270573
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.86813515424728,
+              6.90531834587003
+            ],
+            [
+              79.868167,
+              6.905272
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868385,
+              6.904996
+            ],
+            [
+              79.86841008067131,
+              6.90496353393035
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "type": "path"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.86794471740723,
+              6.90517988270573
+            ],
+            [
+              79.868016,
+              6.905164
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868102,
+              6.905151
+            ],
+            [
+              79.868054,
+              6.905157
+            ]
+          ]
+        },
+        "id": "41e12a41e2b3f2fe951666d90e2ccb06"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall",
+          "color": "violet"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868038,
+              6.905016
+            ],
+            [
+              79.868145,
+              6.904866
+            ],
+            [
+              79.868225,
+              6.90491
+            ]
+          ]
+        },
+        "id": "fdd01bc99965ca50273be9ab73a163e6"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868041,
+              6.90524
+            ],
+            [
+              79.868092,
+              6.905273
+            ]
+          ]
+        },
+        "id": "fa155bef7f9a5fe7d9f48ada3029a361"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868177,
+              6.905319
+            ],
+            [
+              79.868185,
+              6.9053
+            ]
+          ]
+        },
+        "id": "94358f6325c4ee6146d40ea1b0a232bc"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868177,
+              6.905319
+            ],
+            [
+              79.86825,
+              6.905375
+            ],
+            [
+              79.868303,
+              6.905317
+            ],
+            [
+              79.868224,
+              6.905256
+            ],
+            [
+              79.868198,
+              6.905284
+            ]
+          ]
+        },
+        "id": "8692109b90807529e555537191a52c2f"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868253,
+              6.905221
+            ],
+            [
+              79.868279,
+              6.905204
+            ],
+            [
+              79.868354,
+              6.905259
+            ],
+            [
+              79.868303,
+              6.905317
+            ]
+          ]
+        },
+        "id": "8ccbe08adb63713176a84831dbff5a88"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868279,
+              6.905204
+            ],
+            [
+              79.868298,
+              6.905169
+            ]
+          ]
+        },
+        "id": "cafa50ddb6999f7b27beac3c1fe90112"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.86831,
+              6.905151
+            ],
+            [
+              79.868347,
+              6.905134
+            ],
+            [
+              79.868412,
+              6.905177
+            ],
+            [
+              79.868354,
+              6.905259
+            ]
+          ]
+        },
+        "id": "106e5c9b08b3dc536b92af7f1423cf66"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868347,
+              6.905134
+            ],
+            [
+              79.86836,
+              6.905098
+            ]
+          ]
+        },
+        "id": "320a251cf47083112450c5fc381774f0"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868371,
+              6.90508
+            ],
+            [
+              79.868404,
+              6.905061
+            ],
+            [
+              79.868466,
+              6.905099
+            ],
+            [
+              79.868412,
+              6.905177
+            ]
+          ]
+        },
+        "id": "aadec1c140354451d77e591b62358d99"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868419,
+              6.905011
+            ],
+            [
+              79.868452,
+              6.904996
+            ],
+            [
+              79.868513,
+              6.90503
+            ],
+            [
+              79.868466,
+              6.905099
+            ]
+          ]
+        },
+        "id": "a84f9b1f105976b2dc256d55b075acec"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "stall",
+          "stroke": "#555555",
+          "stroke-width": 2,
+          "stroke-opacity": 1,
+          "fill": "#555555",
+          "fill-opacity": 0.5,
+          "name": "Stall 2"
+        },
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                79.868226,
+                6.905255
+              ],
+              [
+                79.868251,
+                6.905227
+              ],
+              [
+                79.868279,
+                6.905206
+              ],
+              [
+                79.868352,
+                6.905258
+              ],
+              [
+                79.868303,
+                6.905315
+              ],
+              [
+                79.868226,
+                6.905255
+              ]
+            ]
+          ]
+        },
+        "id": "d5c0bc35cefd3c122f634bb067b6a44b"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868222,
+              6.90513
+            ],
+            [
+              79.868256,
+              6.905123
+            ]
+          ]
+        },
+        "id": "625d9625ee0efe42bb67a2a10dbef509"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "type": "wall"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              79.868164,
+              6.905198
+            ],
+            [
+              79.868166,
+              6.905232
+            ]
+          ]
+        },
+        "id": "463c764f23e829c228402f266b65a192"
+      }
+    ]
+  }
