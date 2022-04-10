@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:indoor_navigation/views/map_page.dart';
+import 'package:indoor_navigation/views/qr_page.dart';
 import 'package:indoor_navigation/views/widgets/app_drawer.dart';
 
 class HomePage extends StatelessWidget {
@@ -17,9 +18,16 @@ class HomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Scan a QR Code to find your location."),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => const QRViewExample(),
+                  ));
+                },
+                child: const Text('qrView'),
+              ),
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
