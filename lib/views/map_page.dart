@@ -1,14 +1,16 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:indoor_navigation/mapbox/map_control.dart';
+import 'package:get/get.dart';
+import 'package:indoor_navigation/mapbox/map.controller.dart';
+import 'package:indoor_navigation/views/widgets/app_drawer.dart';
 import 'package:mapbox_gl/mapbox_gl.dart';
 
 class MapPage extends StatelessWidget {
   MapPage({Key? key}) : super(key: key);
 
-  MapboxMapController? mapController;
-  MapControl? map;
+  MapboxMapController? mapboxController;
+  final MapController mapController = Get.find<MapController>();
 
   final String token =
       'pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA';
@@ -18,6 +20,10 @@ class MapPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Indoor Navigation'),
+      ),
+      drawer: appDrawer(),
       body: MapboxMap(
         accessToken: token,
         styleString: style,
@@ -28,11 +34,10 @@ class MapPage extends StatelessWidget {
           tilt: 0,
         ),
         onMapCreated: (controller) async {
-          mapController = controller;
-          map = await MapControl.create(controller);
+          mapboxController = controller;
         },
         onStyleLoadedCallback: () {
-          map?.init();
+          mapController.init(mapboxController!);
         },
       ),
     );

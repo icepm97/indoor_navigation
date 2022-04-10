@@ -3,6 +3,9 @@ import 'dart:io';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:indoor_navigation/mapbox/map.controller.dart';
+import 'package:indoor_navigation/views/map_page.dart';
 import 'package:qr_code_scanner/qr_code_scanner.dart';
 
 class QRViewExample extends StatefulWidget {
@@ -16,6 +19,7 @@ class _QRViewExampleState extends State<QRViewExample> {
   Barcode? result;
   QRViewController? controller;
   final GlobalKey qrKey = GlobalKey(debugLabel: 'QR');
+  final MapController mapController = Get.find<MapController>();
 
   // In order to get hot reload to work we need to pause the camera if the platform
   // is android, or resume the camera if the platform is iOS.
@@ -146,9 +150,14 @@ class _QRViewExampleState extends State<QRViewExample> {
       this.controller = controller;
     });
     controller.scannedDataStream.listen((scanData) {
-      setState(() {
-        result = scanData;
-      });
+      if (scanData.code != null &&
+          scanData.code?.startsWith("indoor_nav:") == true) {
+        print(scanData.code);
+        var pointName = scanData.code?.split(":").last;
+        print(pointName);
+        mapController.changeCurrentLoc(pointName!);
+        Get.offAll(MapPage());
+      }
     });
   }
 

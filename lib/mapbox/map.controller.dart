@@ -1,13 +1,13 @@
-import 'dart:collection';
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 import 'package:indoor_navigation/mapbox/map_colors.dart';
 import 'package:indoor_navigation/mapbox/path_graph.dart';
 import 'package:mapbox_gl/mapbox_gl.dart';
 
-class MapControl {
-  MapboxMapController controller;
+class MapController extends GetxController {
+  MapboxMapController? controller;
 
   dynamic geoJson;
   PathGraph graph;
@@ -17,14 +17,13 @@ class MapControl {
   Circle? currentLoc;
   Line? currentPath;
 
-  MapControl._create(
+  MapController._create(
     this.geoJson,
-    this.controller,
     this.graph,
     this.wallLines,
   );
 
-  static Future<MapControl> create(MapboxMapController controller) async {
+  static Future<MapController> create() async {
     var geoJson = jsonDecode(await rootBundle.loadString("assets/map.geojson"));
 
     List<List<LatLng>> wallLines = [];
@@ -62,9 +61,8 @@ class MapControl {
 
     PathGraph graph = PathGraph(pathPoints, pathLines, stallPolys);
 
-    return MapControl._create(
+    return MapController._create(
       geoJson,
-      controller,
       graph,
       wallLines,
     );
@@ -82,7 +80,9 @@ class MapControl {
     return cds.map((e) => parseCoordinateLines(e)).toList();
   }
 
-  init() async {
+  init(MapboxMapController controller) async {
+    this.controller = controller;
+
     addWalls();
     addStalls();
     addStallLabels();
@@ -97,7 +97,7 @@ class MapControl {
 
   addWalls() {
     for (var walls in wallLines) {
-      controller.addLine(LineOptions(
+      controller?.addLine(LineOptions(
         geometry: walls,
         lineColor: MapColors.wall,
         draggable: false,
@@ -109,7 +109,7 @@ class MapControl {
     for (var node in graph.allNodes) {
       if (node.stallPoly != null) {
         controller
-            .addFill(FillOptions(
+            ?.addFill(FillOptions(
               draggable: false,
               geometry: node.stallPoly,
               fillColor: MapColors.stall,
@@ -119,17 +119,17 @@ class MapControl {
             .then((value) => node.stallFill = value);
       }
     }
-    controller.onFillTapped.add((fill) {
+    controller?.onFillTapped.add((fill) {
       var oldStall = selectedStall;
       selectedStall = fill;
       if (oldStall != null) {
-        controller.updateFill(
+        controller?.updateFill(
             oldStall,
             const FillOptions(
               fillColor: MapColors.stall,
             ));
       }
-      controller.updateFill(
+      controller?.updateFill(
           fill,
           const FillOptions(
             fillColor: MapColors.stallSelected,
@@ -141,7 +141,7 @@ class MapControl {
   addStallLabels() {
     for (var node in graph.allNodes) {
       if (node.stallPoly != null && node.name != null) {
-        controller.addSymbol(SymbolOptions(
+        controller?.addSymbol(SymbolOptions(
           draggable: false,
           textAnchor: "top",
           textField: node.name,
@@ -156,10 +156,10 @@ class MapControl {
     var oldLoc = currentLoc;
 
     if (oldLoc != null) {
-      controller.removeCircle(oldLoc);
+      controller?.removeCircle(oldLoc);
     }
 
-    currentLoc = await controller.addCircle(CircleOptions(
+    currentLoc = await controller?.addCircle(CircleOptions(
       draggable: false,
       circleRadius: 10,
       circleColor: MapColors.currentLoc,
@@ -176,10 +176,10 @@ class MapControl {
     var oldPath = currentPath;
 
     if (oldPath != null) {
-      controller.removeLine(oldPath);
+      controller?.removeLine(oldPath);
     }
 
-    currentPath = await controller.addLine(LineOptions(
+    currentPath = await controller?.addLine(LineOptions(
       draggable: false,
       lineColor: MapColors.path,
       lineWidth: 3,
