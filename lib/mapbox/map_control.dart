@@ -140,7 +140,7 @@ class MapControl {
 
   addStallLabels() {
     for (var node in graph.allNodes) {
-      if (node.name != null) {
+      if (node.stallPoly != null && node.name != null) {
         controller.addSymbol(SymbolOptions(
           draggable: false,
           textAnchor: "top",
