@@ -63,6 +63,8 @@ flutter:
   assets:
     - assets/indoor-3d-map.geojson
     - assets/sumanadasa-building.geojson
+    - assets/map.geojson
+    - assets/shop-front.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
