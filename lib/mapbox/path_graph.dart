@@ -8,6 +8,7 @@ class PathNode extends Object with Node<PathNode> {
   LatLng coordinate;
   String? name;
   List<List<LatLng>>? stallPoly;
+  Fill? stallFill;
 
   PathNode(this.coordinate, this.name);
 }
@@ -88,6 +89,13 @@ class PathGraph extends Graph<PathNode> {
     var nodeB = nodesByName[goal];
     if (nodeA != null && nodeB != null) {
       return await pathFinder.findPath(nodeA, nodeB) as Queue<PathNode>;
+    }
+    return Queue();
+  }
+
+  Future<Queue<PathNode>> findPath(PathNode? start, PathNode? goal) async {
+    if (start != null && goal != null) {
+      return await pathFinder.findPath(start, goal) as Queue<PathNode>;
     }
     return Queue();
   }

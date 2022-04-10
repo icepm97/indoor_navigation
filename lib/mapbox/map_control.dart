@@ -14,7 +14,8 @@ class MapControl {
   List<List<LatLng>> wallLines;
 
   Fill? selectedStall;
-  String? currentLoc;
+  Circle? currentLoc;
+  Line? currentPath;
 
   MapControl._create(
     this.geoJson,
@@ -30,7 +31,6 @@ class MapControl {
     List<List<LatLng>> pathLines = [];
     Map<String, List<List<LatLng>>> stallPolys = {};
     Map<String, LatLng> pathPoints = {};
-    // Map<String, LatLng> stallPoints = {};
 
     for (var feature in geoJson["features"]) {
       if (feature["geometry"]["type"] == "LineString") {
@@ -84,8 +84,10 @@ class MapControl {
 
   init() async {
     addWalls();
-    addStores();
-    addStoreLabels();
+    addStalls();
+    addStallLabels();
+
+    changeCurrentLoc("Entrance 1");
 
     // print(await graph.findPathByName("Entrance 1", "Stall 5"));
     // for (var node in await graph.findPathByName("Entrance 1", "Stall 10")) {
@@ -103,16 +105,18 @@ class MapControl {
     }
   }
 
-  addStores() async {
+  addStalls() async {
     for (var node in graph.allNodes) {
       if (node.stallPoly != null) {
-        controller.addFill(FillOptions(
-          draggable: false,
-          geometry: node.stallPoly,
-          fillColor: MapColors.stall,
-          fillOutlineColor: MapColors.stallOutline,
-          fillOpacity: 0.5,
-        ));
+        controller
+            .addFill(FillOptions(
+              draggable: false,
+              geometry: node.stallPoly,
+              fillColor: MapColors.stall,
+              fillOutlineColor: MapColors.stallOutline,
+              fillOpacity: 0.5,
+            ))
+            .then((value) => node.stallFill = value);
       }
     }
     controller.onFillTapped.add((fill) {
@@ -130,10 +134,11 @@ class MapControl {
           const FillOptions(
             fillColor: MapColors.stallSelected,
           ));
+      showRoute();
     });
   }
 
-  addStoreLabels() {
+  addStallLabels() {
     for (var node in graph.allNodes) {
       if (node.name != null) {
         controller.addSymbol(SymbolOptions(
@@ -147,5 +152,38 @@ class MapControl {
     }
   }
 
-  changeCurrentLocation(String pointName) {}
+  changeCurrentLoc(String pointName) async {
+    var oldLoc = currentLoc;
+
+    if (oldLoc != null) {
+      controller.removeCircle(oldLoc);
+    }
+
+    currentLoc = await controller.addCircle(CircleOptions(
+      draggable: false,
+      circleRadius: 10,
+      circleColor: MapColors.currentLoc,
+      geometry: graph.nodesByName[pointName]?.coordinate,
+    ));
+  }
+
+  showRoute() async {
+    var start = graph.nodesByCoord[currentLoc?.options.geometry];
+    var goal = graph.allNodes
+        .firstWhere((node) => node.stallFill?.id == selectedStall?.id);
+
+    var path = await graph.findPath(start, goal);
+    var oldPath = currentPath;
+
+    if (oldPath != null) {
+      controller.removeLine(oldPath);
+    }
+
+    currentPath = await controller.addLine(LineOptions(
+      draggable: false,
+      lineColor: MapColors.path,
+      lineWidth: 3,
+      geometry: path.map((node) => node.coordinate).toList(),
+    ));
+  }
 }
