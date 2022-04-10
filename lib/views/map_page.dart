@@ -12,7 +12,7 @@ class MapPage extends StatelessWidget {
 
   final String token =
       'pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA';
-  final String style = 'mapbox://styles/mapbox/light-v10';
+  final String style = 'mapbox://styles/cloud-kitchen-sl/cl1s64g8w009314o9kilycump';
 
   void onFeatureTap(dynamic featureId, Point<double> point, LatLng latLng) {
     print(featureId);

@@ -11,34 +11,33 @@ class PoiPage extends StatelessWidget {
         title: const Text('Indoor Navigation'),
       ),
       drawer: appDrawer(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Scan a QR Code to find your location."),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: Text("Or"),
-            ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: ElevatedButton(
-                onPressed: null,
-                child: Text("Browse Map"),
+      body: GridView.count(
+        // Create a grid with 2 columns. If you change the scrollDirection to
+        // horizontal, this produces 2 rows.
+        crossAxisCount: 2,
+        // Generate 11 widgets that display their index in the List.
+        children: List.generate(11, (index) {
+          return  Center(
+            child: Card(
+              child: SizedBox(
+                height: 400,
+                child: Column(
+                  children: [
+                    ListTile(
+                      leading: const Icon(Icons.place),
+                      title: Text('STALL $index'),
+                      subtitle:
+                      // ignore: todo
+                      // TODO: Change the subtitle to relevant shop related text.
+                          const Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+                    ),
+                    const Image(image: AssetImage("assets/shop-front.jpeg")),
+                  ],
+                ),
               ),
             ),
-            Padding(
-              padding: EdgeInsets.all(8.0),
-              child: ElevatedButton(
-                onPressed: null,
-                child: Text("View POIs"),
-              ),
-            ),
-          ],
-        ),
+          );
+        }),
       ),
     );
   }
