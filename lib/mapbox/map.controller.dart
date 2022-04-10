@@ -16,6 +16,7 @@ class MapController extends GetxController {
   Fill? selectedStall;
   Circle? currentLoc;
   Line? currentPath;
+  String nextLocName = "Entrance 1";
 
   MapController._create(
     this.geoJson,
@@ -87,7 +88,7 @@ class MapController extends GetxController {
     addStalls();
     addStallLabels();
 
-    changeCurrentLoc("Entrance 1");
+    changeCurrentLoc();
 
     // print(await graph.findPathByName("Entrance 1", "Stall 5"));
     // for (var node in await graph.findPathByName("Entrance 1", "Stall 10")) {
@@ -152,7 +153,7 @@ class MapController extends GetxController {
     }
   }
 
-  changeCurrentLoc(String pointName) async {
+  changeCurrentLoc() async {
     var oldLoc = currentLoc;
 
     if (oldLoc != null) {
@@ -163,7 +164,7 @@ class MapController extends GetxController {
       draggable: false,
       circleRadius: 10,
       circleColor: MapColors.currentLoc,
-      geometry: graph.nodesByName[pointName]?.coordinate,
+      geometry: graph.nodesByName[nextLocName]?.coordinate,
     ));
   }
 

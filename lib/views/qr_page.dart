@@ -155,7 +155,7 @@ class _QRViewExampleState extends State<QRViewExample> {
         print(scanData.code);
         var pointName = scanData.code?.split(":").last;
         print(pointName);
-        mapController.changeCurrentLoc(pointName!);
+        mapController.nextLocName = pointName!;
         Get.offAll(MapPage());
       }
     });
