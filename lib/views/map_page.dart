@@ -1,12 +1,14 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:indoor_navigation/mapbox/map.dart';
 import 'package:mapbox_gl/mapbox_gl.dart';
 
 class MapPage extends StatelessWidget {
   MapPage({Key? key}) : super(key: key);
 
   MapboxMapController? mapController;
+  Map? map;
 
   final String token =
       'pk.eyJ1IjoiY2xvdWQta2l0Y2hlbi1zbCIsImEiOiJjbDFjZzQ2cWUwN2IyM2NueDM5cmNrMDhuIn0.AHe3WiRUdrp43gol5NPmuA';
@@ -40,26 +42,29 @@ class MapPage extends StatelessWidget {
           bearing: 0,
           tilt: 0,
         ),
-        onMapCreated: (controller) {
+        onMapCreated: (controller) async {
           mapController = controller;
-          controller.onFeatureTapped.add(onFeatureTap);
+          map = await Map.create(controller);
+          // controller.onFeatureTapped.add(onFeatureTap);
         },
         onStyleLoadedCallback: () {
-          mapController?.addSource('floorplan',
-              const GeojsonSourceProperties(data: "assets/map.geojson"));
+          // mapController?.addSource('floorplan',
+          //     const GeojsonSourceProperties(data: "assets/map.geojson"));
 
-          mapController?.addLayer(
-              "floorplan",
-              "room-extrusion",
-              const FillLayerProperties(
-                fillOpacity: 0.5,
-                fillColor: "violet",
-              ));
-          mapController!.addSymbol(const SymbolOptions(
-            textAnchor: "top",
-            textField: "Hello",
-            geometry: LatLng(6.796899, 79.900451),
-          ));
+          // mapController?.addLayer(
+          //     "floorplan",
+          //     "room-extrusion",
+          //     const FillLayerProperties(
+          //       fillOpacity: 0.5,
+          //       fillColor: "violet",
+          //     ));
+          // mapController!.addSymbol(const SymbolOptions(
+          //   textAnchor: "top",
+          //   textField: "Hello",
+          //   geometry: LatLng(6.796899, 79.900451),
+          // ));
+
+          map?.init();
         },
       ),
     );
