@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:math';
 
 import 'package:indoor_navigation/mapbox/a_star.dart';
@@ -15,6 +16,8 @@ class PathGraph extends Graph<PathNode> {
   Map<LatLng, PathNode> nodesByCoord = {};
   Map<String, PathNode> nodesByName = {};
   Map<PathNode, Set<PathNode>> graph = {};
+
+  late AStar pathFinder;
 
   PathGraph(
     Map<String, LatLng> pathPoints,
@@ -39,9 +42,12 @@ class PathGraph extends Graph<PathNode> {
         graph[nodeA]!.add(nodeB);
         graph[nodeB]!.add(nodeA);
       } else {
+        print(pathLine);
         print("invalid path line segment");
       }
     }
+
+    pathFinder = AStar<PathNode>(this);
   }
 
   double calculateDistance(LatLng p1, LatLng p2) {
@@ -75,5 +81,14 @@ class PathGraph extends Graph<PathNode> {
   @override
   Iterable<PathNode> getNeighboursOf(PathNode node) {
     return graph[node]?.toList() ?? [];
+  }
+
+  Future<Queue<PathNode>> findPathByName(String start, String goal) async {
+    var nodeA = nodesByName[start];
+    var nodeB = nodesByName[goal];
+    if (nodeA != null && nodeB != null) {
+      return await pathFinder.findPath(nodeA, nodeB) as Queue<PathNode>;
+    }
+    return Queue();
   }
 }

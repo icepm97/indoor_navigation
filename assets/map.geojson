@@ -46,7 +46,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 1
+          "name": "1"
         },
         "geometry": {
           "type": "Point",
@@ -298,7 +298,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 7
+          "name": "7"
         },
         "geometry": {
           "type": "Point",
@@ -344,7 +344,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 3
+          "name": "3"
         },
         "geometry": {
           "type": "Point",
@@ -712,7 +712,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 6
+          "name": "6"
         },
         "geometry": {
           "type": "Point",
@@ -776,7 +776,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 2
+          "name": "2"
         },
         "geometry": {
           "type": "Point",
@@ -794,7 +794,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 5
+          "name": "5"
         },
         "geometry": {
           "type": "Point",
@@ -940,7 +940,7 @@
           "marker-size": "medium",
           "marker-symbol": "",
           "type": "path",
-          "name": 4
+          "name": "4"
         },
         "geometry": {
           "type": "Point",
@@ -1185,10 +1185,6 @@
             [
               79.868342,
               6.905067
-            ],
-            [
-              79.868385,
-              6.904996
             ],
             [
               79.868385,
