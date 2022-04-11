@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:indoor_navigation/mapbox/map.controller.dart';
+import 'package:indoor_navigation/views/map_page.dart';
 import 'package:indoor_navigation/views/widgets/app_drawer.dart';
 
 class PoiPage extends StatelessWidget {
-  const PoiPage({Key? key}) : super(key: key);
+  PoiPage({Key? key}) : super(key: key);
+
+  final MapController mapController = Get.find<MapController>();
 
   @override
   Widget build(BuildContext context) {
@@ -17,19 +22,24 @@ class PoiPage extends StatelessWidget {
         crossAxisCount: 2,
         // Generate 11 widgets that display their index in the List.
         children: List.generate(11, (index) {
-          return  Center(
+          return Center(
             child: Card(
               child: SizedBox(
                 height: 400,
                 child: Column(
                   children: [
                     ListTile(
+                      onTap: () {
+                        mapController.nextLocName = 'Stall $index';
+                        Get.off(MapPage());
+                      },
                       leading: const Icon(Icons.place),
-                      title: Text('STALL $index'),
+                      title: Text('Stall $index'),
                       subtitle:
-                      // ignore: todo
-                      // TODO: Change the subtitle to relevant shop related text.
-                          const Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+                          // ignore: todo
+                          // TODO: Change the subtitle to relevant shop related text.
+                          const Text(
+                              'Music by Julie Gable. Lyrics by Sidney Stein.'),
                     ),
                     const Image(image: AssetImage("assets/shop-front.jpeg")),
                   ],
